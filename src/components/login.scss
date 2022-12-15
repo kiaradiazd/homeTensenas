@@ -1,0 +1,48 @@
+.cuerpologin {
+  background: rgba(37, 162, 213, 255);
+  display: flex;
+  flex-wrap: nowrap;
+  height: 290px;
+  width: responsive;
+}
+
+.login {
+  float: right;
+  position: relative;
+  
+  margin-block: 60px;
+  margin-bottom: 350px;
+  left: 50%;
+
+  box-sizing: border-box;
+
+  width: 40%;
+  height: 420px;
+  align-items: center;
+
+  background: #ffffff;
+  border: 1px solid #25a2d5;
+  border-radius: 20px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #1e266d;
+}
+
+.botonInicio {
+  margin: 10px;
+  border-color: rgba(37, 162, 213, 255);
+  border-radius: 10px;
+}
+
+.botonRegistro {
+  border-color: rgba(37, 162, 213, 255);
+  background-color: rgba(37, 162, 213, 255);
+  border-radius: 10px;
+  color: #ffff;
+}
