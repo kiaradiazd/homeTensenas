@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    //hace que no cresca más alla del tamaño asignado
+    box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
 
 }
@@ -14,46 +16,60 @@
     position: sticky;
     top: 0px;
     z-index: 10;
-    border-radius: 1%;
-    flex-wrap: nowrap;
     align-items: center;
-
+    justify-content: space-between;
 }
 
 
-
 .logopng{
-    width: 100px;
-    height: 50px;
+    margin: 0;
+    width: 50px;
+    height: 30px;
     
 }
 
 .logo {
-    float: left;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.logoLetra{
 }
 
 .lista {
     display: flex;
-flex-direction:row;
-left: 80%;
-
-
-}
-
-a::placeholder{
-    color: dodgerblue;
-}
-
-.buttonInicio{
-    display:flex;
     flex-wrap: nowrap;
-    position: absolute;
-left: 80.56%;
-right: 6.11%;
-top: 19.48%;
-bottom: 18%;
+    flex-direction:row;
+    align-items: center;
 
-border: none;
-border-radius: 10px;
+}
 
+.lista a:hover{
+    background-color: white; opacity: 0.7;
+    border-radius: 10px;
+
+}
+
+
+.nav{
+    padding: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.buttoninicio{
+    display:flex;
+    margin: 5px;
+    color: rgba(37,162,213,255);
+}
+
+
+
+@medio (min-width: 720px){
+    .cabecera{
+    }
 }

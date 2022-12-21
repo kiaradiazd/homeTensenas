@@ -1,12 +1,13 @@
 import React from "react";
 import './cuerpo.scss'
+import plan from '../assets/img/planaprendizaje.png'
 
 function CuerpoComponent() {
     return <div className="bloqueGeneral">
         <div className="planAprendizaje">
-            <img></img>
-            <h3>Plan de aprendizaje</h3>
+            <img className="imgPlan" src={plan} alt="esto es una imagen"></img>
             <div className="planAprendizajeP">
+            <h3>Plan de aprendizaje</h3>
                 <p>La idea de TenSeñas es que aprendas de una manera interactiva realizando pequeñas actividades y juegos que al completar aumenta tu porcentaje de avanze junto a pequeños logros para motivarte en tu meta de adquerir un nuevo lenguaje y herramienta para la inclusión.</p>
             </div>
         </div>
@@ -25,21 +26,21 @@ function CuerpoComponent() {
                 <h6>Acceso las 24 horas</h6>
                 <p>Si tienes libre un momento al día lo puedes usar en TenSeñas nuestra página esta a disposición del aprendizaje las 24 horas del día.</p>
             </div>
-        <div className="beneficios2"> 
-            <div className="problematica">
-                <img className="imgProblematica"></img>
-                <h6>Problemática</h6>
-                <p>Sabias que en chile existen ... personas con discapacidad auditiva y solo ... maneja la LSCH es por eso que buscamos un cambio ven y unete al cambio asi juntos logremos un Chile mas inclusivo</p>
-            </div>
-            </div>
-                <div className="aprendeJugando">
+            <div className="beneficios2">
+                <div className="problematica">
+                    <img className="imgProblematica"></img>
+                    <h6>Problemática</h6>
+                    <p>Sabias que en chile existen ... personas con discapacidad auditiva y solo ... maneja la LSCH es por eso que buscamos un cambio ven y unete al cambio asi juntos logremos un Chile mas inclusivo</p>
+                </div>
+            <div className="aprendeJugando">
                 <img className="imgAprende"></img>
                 <h6>Aprende jugando</h6>
                 <p>Nunca antes fue tan fácil y entretenido aprender lenguaje de señas.
                     No te daras ni cuenta y comenzarás a comunicarte facilmente. .. </p>
             </div>
+            </div>
         </div>
-        </div>
+    </div>
 }
 
 export default CuerpoComponent;

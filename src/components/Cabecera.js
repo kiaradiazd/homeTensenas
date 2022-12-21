@@ -1,28 +1,24 @@
 import React from "react";
 import './cabecera.scss';
-import imagenes from '/Generation/react/reactParaYo/reactkiara/src/assets/imagenes'
+import logo from '../assets/img/logo.png'
 
-function CabeceraComponent (){
+function CabeceraComponent() {
     return <header className="cabecera">
         <div className="logo">
-        <img className="logopng" src={imagenes.img1}></img>
-            <span className="tensenas">TenSeñas</span>
+            <a>
+
+            <img className="logopng" src={logo} alt="este es el logo"></img>
+            {/* <h4 className="logoLetra">TenSeñas</h4> */}
+            TenSeñas
+            </a>
         </div>
-        <nav>
-			<ul className="lista">
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Acerca de</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-            <button className="buttonInicio">
-            <picture></picture>
-            <span>Inicia Sesión</span>
-        </button>
-		</nav>
 
-        
-
+        <nav className="lista">
+            <a href="" className="nav">Inicio</a>
+            <a href="" className="nav">Sobre nosotros</a>
+            <a href="" className="nav">Conctacto</a>
+            <button class="btn btn-light buttoninicio" type="submit">Iniciar Sesión</button>
+        </nav>
     </header>
 }
-
 export default CabeceraComponent;
